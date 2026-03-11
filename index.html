@@ -2,22 +2,54 @@
 <html>
 <head>
 <title>StoryVerse</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+}
+
+.sidebar{
+height:100%;
+width:200px;
+position:fixed;
+background:#222;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:10px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#575757;
+}
+
+.main{
+margin-left:210px;
+padding:20px;
+}
+</style>
+
 </head>
 
 <body>
 
+<div class="sidebar">
+<a href="index.html">Home</a>
+<a href="search.html">Search</a>
+<a href="stories.html">Stories</a>
+<a href="upload.html">Upload</a>
+<a href="login.html">Login</a>
+</div>
+
+<div class="main">
+
 <h1>StoryVerse</h1>
 <p>Read and share amazing novels.</p>
-
-<nav>
-<a href="index.html">Home</a> |
-<a href="search.html">Search</a> |
-<a href="stories.html">Stories</a> |
-<a href="upload.html">Upload</a> |
-<a href="login.html">Login</a>
-</nav>
-
-<br>
 
 <input type="text" placeholder="Search stories...">
 <button>Search</button>
@@ -32,7 +64,7 @@
 
 <button>Login / Create Account</button>
 
-<p>Read stories freely. Create an account only if you want to share your own stories.</p>
+</div>
 
 </body>
 </html>
